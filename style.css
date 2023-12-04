@@ -277,6 +277,14 @@ nav ul li a:hover::after{
     padding-bottom: 0px;
     padding-left: 150px;
 }
+.implement1 img{
+    width: 50%;
+    height: 300px;
+}
+.custom-image {
+    width: 50%; /* Adjust the width as needed */
+    height: 300px; /* Maintain aspect ratio */
+  }
 .implement h4{
     padding-top: 20px;
     padding-bottom: 10px;
