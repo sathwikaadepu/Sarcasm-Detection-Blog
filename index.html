@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarcasm Detection Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9e49b0755.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header"><b>Home</b></a></li>
+                <li><a href="#contents"><b>Contents</b></a></li>
+                <li><a href="#contact"><b>About</b></a></li>
+                <li><a href="#contact"><b>Review</b></a></li>
+        
+                <i class="fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="closemenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> </p>
+            <h1>"Multi-Model Ensemble based Sarcasm Detection Framework on Social Media Platforms"</h1>
+        </div>
+    </div>
+</div>
+<!----------------------------------------Contents---------------------------------------->
+<div id="contents">
+    <div class="container1">
+        <div class="header-1">
+            <h1>Contents</h1>
+        </div>
+        <div class="table">
+        <nav>
+            <ul>
+                <li><a href="#introduction"><b>Introduction</b></a></li><br>
+            
+                <li><a href="#obj-lit"><b>Objective</b></a></li><br>
+                <li><a href="#obj-lit"><b>Literature Review</b></a></li><br>
+                <li><a href="#setup"><b>Data Collection</b></a></li><br>
+                <li><a href="#implementation"><b>Implementation</b></a></li><br>
+                <li><a href="#methedologies"><b>Methodologies</b></a></li><br>
+                <li><a href="#results"><b>Results</b></a></li><br>
+                <li><a href="#conclusion"><b>Conclusion</b></a></li><br>
+                <li><a href="#futurescope"><b>Future Scope</b></a></li><br>
+                <li><a href="#references"><b>References</b></a></li><br>
+        
+                <i class="fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="closemenu()"></i>
+        </nav>
+    </div>
+    </div>
+</div>
+
+<!----------------------------------------introduction---------------------------------->
+<div id="introduction">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/logo.jpg">
+            </div>
+            <div class="abt">
+                
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"><b>Introduction</b></h1>
+                <p>Online communication, particularly on social media platforms, is characterized by a rich tapestry of expressions, including the subtle and often challenging-to-detect phenomenon of sarcasm. In response to the growing need for nuanced sentiment analysis, this project introduces an innovative multi-modal ensemble approach to sarcasm detection. By integrating both textual and audio information sourced from social media content, the framework aims to enhance the accuracy and robustness of sarcasm detection in diverse online conversations.
+                    <br>
+                    <br>In conclusion, this project not only contributes to the advancement of sarcasm detection on social media platforms but also underscores the significance of a multi-modal approach. By considering both linguistic and acoustic cues, the framework offers a more holistic understanding of sarcasm, catering to the complexities of communication in the dynamic landscape of online platforms.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Problem Statement</p>
+                    <p class="tab-links" onclick="opentab('experience')">Proposed Plan</p>
+                  <!-- <p class="tab-links" onclick="opentab('education')">Education</p>-->
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span></span><br>Talking on social media is like having a big chat with friends, and sometimes people use sarcasm, which is like saying the opposite of what they mean. But figuring out when someone is being sarcastic online is tricky for computer programs. The usual tools have a hard time understanding the clever language used in social media posts.</li>
+                      <!--  <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>-->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span></span><br>
+                            Project aims to create a smart computer program that can detect sarcasm on social media by combining text comprehension with audio clip analysis. The computer brain is trained to understand social media language and listen to audio clips to identify sarcasm. The goal is to combine the two superpowers of understanding written words and listening to spoken words using ensemble learning, making the computer more adept at catching sarcasm on social media.
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------Table--------------------------------------------------------->
+<div id="obj-lit">
+    <div class="lit1">
+        <div class="column">
+            <h2>Objective</h2>
+            <p>
+                In the realm of social media communication, the primary objective of this project is to refine and enrich online conversations by developing a sophisticated computer program capable of accurately detecting sarcasm in both written text and spoken words. The goal is to provide users with a tool that comprehensively understands the nuances of sarcastic expressions, fostering a more nuanced and engaging online environment.
+                An integral part of the project's objectives is to enhance the overall user experience on social media platforms. By creating a user-friendly tool, the project aims to reduce misunderstandings caused by sarcastic content, ultimately contributing to more enjoyable and accessible online interactions. The envisioned outcome is a tool that empowers users to navigate the complexities of online communication with greater ease and confidence.
+            </p>
+            <br>
+            <p>
+                Furthermore, the project seeks to strengthen the field of sentiment analysis on social media. Beyond sarcasm detection, the multi-modal framework developed in this project is anticipated to improve the accuracy of sentiment assessments, offering a more comprehensive understanding of the emotional tone within digital conversations.
+            </p>
+            <br>
+            <p>
+                In alignment with fostering a positive online environment, the project aspires to contribute to the creation of safer digital spaces. By minimizing misinterpretations and confusion arising from sarcastic expressions, the project endeavors to cultivate a more constructive atmosphere within digital communities, where users feel understood and supported.
+            </p>
+            <br>
+            <p>
+                Lastly, the project aims for generalizability across various social media platforms. The developed system is designed to be adaptable and effective in diverse communication settings, catering to the different linguistic styles and conversational nuances present on different online platforms. The overarching objective is to create a versatile tool that brings positive and meaningful changes to the way users engage with content on social media.
+            </p>
+        </div>  
+        <div class="column">
+            <h2>Literature Review</h2>
+            <p>
+                Sarcasm is like a form of wordplay where the words mean the opposite of what they say. People often use it to be funny, make a point, or tease someone. Figuring out if someone is being sarcastic can be tough for computer systems because it's not just about the words but also understanding the context and tone. Sarcasm isn't limited to just written words; it can also be spoken or a mix of both. That's why researchers are focusing on figuring out sarcasm not only in text but also in audio or a combination of both. Detecting sarcasm in different types of information sources, like text and audio, has become a hot topic in recent research on language processing.
+            </p>
+            <br>
+            <p>
+                Text-based sarcasm detection involves teaching computers to recognize sarcasm in written content like social media posts or news articles. There are three main approaches: rule-based methods rely on specific rules and patterns such as words or punctuation marks, machine learning methods use various features like words, sentence structure, and sentiment to train computers to recognize sarcasm, and deep learning methods employ advanced algorithms like neural networks to understand high-level patterns. These approaches have shown promise in various situations, but they also face challenges like a lack of labeled data, the diversity and ambiguity of sarcasm expressions, the need for contextual information, and a lack of standardized evaluation metrics. The goal is to make computers really good at catching sarcasm in diverse online conversations.
+            </p>
+            <br>
+            <p>
+                Detecting sarcasm in audio involves teaching computers to understand when someone is speaking sarcastically in various situations like podcasts, videos, or dialogues. There are two main ways to do this: one focuses on the sound itself, analyzing features like pitch and intensity of the voice, while the other looks at the words being spoken, considering aspects like the meaning and structure of the speech. These methods have potential applications in sentiment analysis, opinion mining, chatbot development, and cyberbullying detection. However, challenges include the complexity of speech signals, potential noise in audio data, subjective interpretations of sarcasm, and a lack of standardized ways to measure the performance of sarcasm detection in audio. Despite these difficulties, advancements in audio-based sarcasm detection could significantly improve our ability to comprehend and respond to sarcastic speech in various contexts.
+            </p>
+        </div>             
+    </div>
+</div>
+<!---------------------------------------------Objective------------------------------------------------------>
+<!--<div id="objective">
+    <div class="obj">
+        <h1>Objective</h1>
+        <p>
+            In the realm of social media communication, the primary objective of this project is to refine and enrich online conversations by developing a sophisticated computer program capable of accurately detecting sarcasm in both written text and spoken words. The goal is to provide users with a tool that comprehensively understands the nuances of sarcastic expressions, fostering a more nuanced and engaging online environment.
+            <br>
+            <br>
+            An integral part of the project's objectives is to enhance the overall user experience on social media platforms. By creating a user-friendly tool, the project aims to reduce misunderstandings caused by sarcastic content, ultimately contributing to more enjoyable and accessible online interactions. The envisioned outcome is a tool that empowers users to navigate the complexities of online communication with greater ease and confidence.
+            <br>
+            <br>
+            Furthermore, the project seeks to strengthen the field of sentiment analysis on social media. Beyond sarcasm detection, the multi-modal framework developed in this project is anticipated to improve the accuracy of sentiment assessments, offering a more comprehensive understanding of the emotional tone within digital conversations.
+            <br>
+            <br>
+            In alignment with fostering a positive online environment, the project aspires to contribute to the creation of safer digital spaces. By minimizing misinterpretations and confusion arising from sarcastic expressions, the project endeavors to cultivate a more constructive atmosphere within digital communities, where users feel understood and supported.
+            <br>
+            <br>
+            Lastly, the project aims for generalizability across various social media platforms. The developed system is designed to be adaptable and effective in diverse communication settings, catering to the different linguistic styles and conversational nuances present on different online platforms. The overarching objective is to create a versatile tool that brings positive and meaningful changes to the way users engage with content on social media.
+        </p>
+    </div>
+</div>-->
+<!---------------------------------------------Literature Review------------------------------------------------------>
+<!--<div id="literature">
+    <div class="lit">
+        <h1>Literature Review</h1>
+        <p>
+            Sarcasm is like a form of wordplay where the words mean the opposite of what they say. People often use it to be funny, make a point, or tease someone. Figuring out if someone is being sarcastic can be tough for computer systems because it's not just about the words but also understanding the context and tone. Sarcasm isn't limited to just written words; it can also be spoken or a mix of both. That's why researchers are focusing on figuring out sarcasm not only in text but also in audio or a combination of both. Detecting sarcasm in different types of information sources, like text and audio, has become a hot topic in recent research on language processing.
+            <br>
+            An integral part of the project's objectives is to enhance the overall user experience on social media platforms. By creating a user-friendly tool, the project aims to reduce misunderstandings caused by sarcastic content, ultimately contributing to more enjoyable and accessible online interactions. The envisioned outcome is a tool that empowers users to navigate the complexities of online communication with greater ease and confidence.
+            <br>
+            <br>
+            Furthermore, the project seeks to strengthen the field of sentiment analysis on social media. Beyond sarcasm detection, the multi-modal framework developed in this project is anticipated to improve the accuracy of sentiment assessments, offering a more comprehensive understanding of the emotional tone within digital conversations.
+            <br>
+            <br>
+            In alignment with fostering a positive online environment, the project aspires to contribute to the creation of safer digital spaces. By minimizing misinterpretations and confusion arising from sarcastic expressions, the project endeavors to cultivate a more constructive atmosphere within digital communities, where users feel understood and supported.
+            <br>
+            Lastly, the project aims for generalizability across various social media platforms. The developed system is designed to be adaptable and effective in diverse communication settings, catering to the different linguistic styles and conversational nuances present on different online platforms. The overarching objective is to create a versatile tool that brings positive and meaningful changes to the way users engage with content on social media.
+        </p>
+    </div>
+</div>-->
+<!---------------------------------------------Data Source------------------------------------------>
+<div id="setup">
+    <div class="data">
+        <h1>Data Source </h1>
+    </div>
+        <div class="data-list">
+            <div class="data1">
+                    <h2>Text Dataset:</h2>
+                    <p>We acquired a text-based dataset from Kaggle comprising 26,709 instances for sarcasm detection. To train our multi-modal ensemble-based framework, we focused on a subset of 20,000 instances. This dataset forms the core of our project, emphasizing text-based sarcasm detection on social media platforms.
+                    <br>Training set size -> 20,000<br>
+                    Testing set size -> 6,709</p>
+                    </p>
+                    <h2>Audio Dataset:</h2>
+                    <p>
+                        We employed the Mustard dataset for the audio component of our project, encompassing 690 utterance videos. This dataset plays a crucial role in training and enhancing the audio-based model within our multi-modal ensemble sarcasm detection framework.
+                    </p>
+                    <h2>Mustard Dataset:</h2>
+                    <p>
+                        They created something called the MUStARD dataset, which is like a special collection of videos for studying how computers can find sarcasm. They took clips from popular TV shows like Friends, The Golden Girls, and The Big Bang Theory, as well as a show we made up called Sarcasmaholics Anonymous. In each video clip, people say things, and they labeled whether what they said was sarcastic or not. We also added extra information about the situation around each thing they said. This dataset helps researchers teach computers to understand and detect sarcasm in videos.
+                    </p>
+                    <br>
+                    <p>Click below to download Data Set </p>
+            </div>
+            <a href="" download class="btn">Download DataSet</a>
+        </div>
+</div>
+<!-----------------------------------------------Implementation----------------------------------------------->
+<div id="implementation">
+    <div class="implement">
+        <h1>Implementation</h1>
+        <p>
+            In Implementation phase, we meticulously transformed our dataset to facilitate effective sarcasm detection. For the textual aspect, we employed a tokenization process to break down sentences into meaningful units, followed by embedding techniques to convert words into numerical vectors for neural network processing. Sequence padding ensured uniform input length during model training.
+            The features from both text and audio were thoughtfully concatenated, creating a comprehensive representation that captures the nuanced characteristics of sarcasm for subsequent analysis and model training
+        </p>
+        <h2>
+            Text Data Representation
+        </h2> 
+        <p>
+            In the text data representation phase, our objective was to convert raw textual information into a format suitable for training and analyzing sarcasm detection models. To achieve this, we initiated a tokenization process, breaking down sentences into individual words or subwords.
+        </p>
+        <h3>
+            Extracting Information
+        </h3>
+        <div class="implement1">
+            <img src="images/fing1.png">
+        </div>
+        <h3>
+            Tokenization with Keras Tokenizer
+        </h3>
+        <div class="implement1">
+            <img src="images/fig2.png">
+        </div>
+        <h3>
+            Padding and Embedding
+        </h3>
+        <div class="implement1">
+            <img src="images/fig3.png">
+            <img src="images/fig4.png">
+            <img src="images/fig5.png">
+            
+        </div>
+        <h2>
+            Audi Data Representation
+        </h2>
+        <p>
+            In the audio data representation process for sarcasm detection, spoken words from audio signals undergo a multi-step transformation. Initially, speech-to-text conversion transcribes the audio utterances into textual form.
+        </p>
+        <h3> 
+            Speech-to-Text Conversion
+        </h3>
+        <div class="implement1">
+            <img src="images/fig6.png">            
+        </div>
+
+    </div>
+</div>
+<!---------------------------------------------Methodologies-------------------------------------------------->
+<div id="methedologies">
+    <div class="container1">
+        <h1>Methodologies</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h2>BERT Feature Extraction</h2>
+                <p><b>Bidirectional Encoder Representations from Transformers</b> is a pre-trained deep learning model that excels at natural language understanding tasks, including text classification, sentiment analysis, and feature extraction. Feature extraction with BERT involves obtaining contextualized word embeddings, which capture the meaning of words in their context within a given sentence or document.</p>
+                <a href="https://www.google.com/search?q=bert+feature+extraction&rlz=1C1CHBF_enIN1038IN1038&oq=BERT+feature+e&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBwgBEAAYgAQyBggCEEUYOTIICAMQABgWGB4yCAgEEAAYFhgeMggIBRAAGBYYHjIGCAYQRRhB0gEINjQyM2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h2>MFCC Feature Extraction</h2>
+                <p><b>Mel-Frequency Cepstral Coefficients</b> are widely used in speech and audio signal processing for feature extraction. They are an effective way to represent the spectral characteristics of audio signals, and they are commonly used for tasks like speech recognition and audio classification.</p>
+                <a href="https://www.google.com/search?q=MFCC+Feature+Extraction&rlz=1C1CHBF_enIN1038IN1038&oq=MFCC+Feature+Extraction&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzQxMWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h2>Feature Concatenation</h2>
+                <p>
+                    The code combines text features (text_numpy) and audio features (audio_numpy) into a single NumPy array (audio_input_data). It initializes an empty array, adds text features to it, and then adds audio features. This is a common approach in multimodal data processing, where features from different modalities are merged for comprehensive analysis.
+                </p>
+                <a href="https://www.google.com/search?q=feature+concatenation&rlz=1C1CHBF_enIN1038IN1038&oq=Feature+Concatenation&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyCAgBEAAYFhgeMggIAhAAGBYYHjINCAMQABiGAxiABBiKBTINCAQQABiGAxiABBiKBdIBCDE1MDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---------------------------------------------Results------------------------------------------>
+<div id="results">
+    <div class="res">
+        <h1>Results</h1>
+            <div class="result">
+                <p>	The sarcasm detection framework has undergone rigorous evaluation, employing both text and audio modalities. The following summarizes the key results:</p>
+            </div>
+            <h2>Text Modality</h2>
+            <div class="r">
+                <img src="images/r1.png"> 
+                <img src="images/r2.png"> 
+            </div>
+            <h2>Audio Modality</h2>
+            <div class="r2">
+                <img src="images/r3.png"> 
+            </div>
+            <div class="r3">
+                <img src="images/r4.png"> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------------Conclusion--------------------------------------------->
+<div id="conclusion">
+    <div class="conclude">
+        <h1>Conclusion</h1>
+        <p>
+            In conclusion, the Multi-modal Ensemble-Based Sarcasm Detection Framework has successfully addressed the intricate challenge of identifying sarcasm across text and audio modalities. Leveraging neural network techniques for text analysis and a Random Forest classifier for audio signals, the project achieved commendable accuracy and demonstrated the potential for further enhancement through multimodal fusion. The results underscore the significance of integrating diverse cues for robust sarcasm detection. Future directions include exploring advanced fusion techniques, real-time deployment, user-friendly interfaces, and continuous learning mechanisms, positioning this framework as a valuable tool for nuanced sentiment analysis in the dynamic landscape of social media communication.
+        </p>
+    </div>
+</div>
+<!---------------------------------------------Future Scope------------------------------------------>
+<div id="futurescope">
+    <div class="future">
+        <h1>Future Scope</h1>
+        <p>
+            The successful implementation of the sarcasm detection framework lays the groundwork for several exciting avenues of exploration and enhancement:
+        </p>
+        <h2>Multimodal Fusion Strategies:</h2>
+        <p> 
+            Explore advanced multimodal fusion techniques to further integrate information from text and audio modalities. Investigate methods such as attention mechanisms or transformer-based architectures to capture nuanced relationships between textual and auditory sarcasm cues.
+        </p>
+        <h2>Model Fine-tuning:</h2>
+        <p>
+            Conduct extensive hyperparameter tuning and fine-tuning of models to optimize performance on diverse datasets and social media contexts. This involves exploring different neural network architectures, adjusting learning rates, and experimenting with various preprocessing techniques for both text and audio data.
+        </p>
+        <h2>Real-time Detection:</h2>
+        <p>
+            Investigate the feasibility of implementing real-time sarcasm detection on social media platforms. This involves optimizing models for low-latency predictions and exploring efficient deployment strategies, considering the dynamic nature of content generation on social media.
+        </p>
+        <h2>Adversarial Testing:</h2>
+        <p>
+            Assess the robustness of the model against adversarial attacks. Investigate techniques to enhance the model's resilience in real-world scenarios where users may intentionally craft content to deceive sarcasm detection algorithms.
+        </p>
+        <h2>Expand Dataset Diversity:</h2>
+        <p>
+            Extend the dataset to encompass a more diverse range of social media sources, linguistic styles, and cultural contexts. This ensures the model's generalization across various demographics and language variations, making it more applicable in a global context.
+        </p>
+        <h2>Incremental Model Updates:</h2>
+        <p>
+            Implement a mechanism for continuous learning, allowing the model to adapt to evolving language trends and variations in sarcasm expression over time. Regularly update the model with new labeled data to enhance its understanding of emerging sarcasm patterns.
+        </p>
+
+        <div class="future1">
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------References---------------------------------------------------->
+<div id="references">
+    <div class="con">
+        <h1>References</h1>
+        <div class="refer">
+            <div class="underline-on-hover">
+                
+                <p>
+                  <b>  [1]</b> Liu, P., Chen, W., Ou, G., Wang, T.,Yang, D., Lei, K.: Sarcasm Detection in Social Media Based on Imbalanced Classification In: Web-Age Information Management, pp. 459-471. Cham, (2014).
+                    <br>
+                    <br>
+                </p>
+                <p>
+                    <b>[2] </b>Mehndiratta, P., Sachdeva, S., Soni, D. :Detection of Sarcasm in Text Data using Deep Convolutional Neural Networks In: Scientific International Journal for Parallel and Distributed Computing, vol. 18, September (2017). 
+                    <br>
+                    <br>
+                </p>
+                <p>
+                    <b>[3] </b>Zhibo, W. , Ma, L., and Zhang, Y. : A Hybrid Document Feature Extraction Method Using Latent Dirichlet Allocation and Word2Vec. In : IEEE First International Conference on Data Science in Cyberspace, June (2016). 
+                <br>
+                <br>
+                </p>
+                <p>
+                   <b> [4] </b>Zhang, W., Xu, W., Chen G., Guo, J. : A Feature Extraction Method Based on Word Embedding for Word Similarity Computing. In: Communications in Computer and Information Science, vol. 496,pp. 160- 167 January, (2014).
+                    <br>
+                    <br>
+                </p>
+                <p>
+                  <b>  [5]</b> Lunando, E., Purwarianti, A. : Indonesian Social Media Sentiment Analysis With Sarcasm Detection. In: Int. Conf. Adv. Comput. Sci. Inf. Syst. ICACSIS, pp. 195- 198. September (2013). 
+                </p>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!---------------------------------------------------Review---------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Details</h1>
+                <h2>BONEPELLI UDAY REDDY</h2>
+                <h2>ADEPU SATHWIKA</h2>
+                <h2>GUGGILLA MADHAN KUMAR</h2>
+                <h2>NALLATHEEGALA PUSADATTA</h2>
+                <h2>POSHALA AKSHAY</h2>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>7979797979</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sathwika-adepu-/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download Code</a>
+            </div>
+            <div class="contact-right">
+                <h1>Leave a Reply</h1>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email">
+                    <textarea name="Message"rows="6" placeholder="Your Review"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+      <!-- <p>Copyright @ . Made with <i class="fa-solid fa-heart"></i>by Easy Tutorials</p>--> 
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    
+    }
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbygSZLFbaM8YbJXfP19rI-FpndMqdIlvxsYz6XgUQIqULR3x7MA5wFD9CGXwWQXtPbzUg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 50000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
